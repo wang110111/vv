@@ -10,6 +10,8 @@
 
 name: Build OpenWrt
 
+release  types:[published]
+
 on:
   repository_dispatch:
   workflow_dispatch:
@@ -32,6 +34,8 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
+
+
 
 jobs:
   build:
